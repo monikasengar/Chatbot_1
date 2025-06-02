@@ -1,0 +1,12 @@
+CREATE DATABASE dialogflow_db;
+
+USE dialogflow_db;
+
+
+   CREATE TABLE service_requests_2 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    session_id VARCHAR(255) UNIQUE,
+    customer_name VARCHAR(255),
+    service_type VARCHAR(255),
+    contact_number VARCHAR(20)
+);
